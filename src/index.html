@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-[#0f1b3d] text-white">
+    <!-- Navbar -->
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+        <a href="#" class="font-serif text-2xl font-bold underline"> Newsletter </a>
+        <div class="flex items-center gap-6 sm:gap-10">
+            <a href="#articles" class="text-base transition hover:text-blue-400">  Articles </a>
+            <a href="#login" class="rounded-lg border-2 border-white px-4 py-2 transition hover:bg-white hover:text-[#0f1b3d]">Login</a>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <main>
+        <section class="flex min-h-[620px] items-center justify-center px-5 py-12 lg:min-h-[calc(100vh-80px)]">
+            <div class="w-full max-w-4xl text-center">
+                <!-- Main Heading -->
+                <h1 class="font-serif text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl">Build your online community
+                    <br class="hidden md:block" />
+                    with our amazing tips and become a
+                    <br class="hidden md:block" />
+                    <span class="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">millionaire</span>
+                    solopreneur.
+                </h1>
+                <!-- Description -->
+                <p class="mx-auto mt-6 max-w-3xl text-base leading-7 text-gray-200 sm:text-lg">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Hic autem, est eaque nihil necessitatibus porro facere ut
+                    sed dolore, iste nam? Quas minus consequuntur, beatae quis
+                    officia architecto expedita sunt?
+                </p>
+                <!-- Subscription Form -->
+                <form id="login"
+                      class="mx-auto mt-10 flex w-full max-w-xl flex-col items-center justify-center gap-4 sm:flex-row"
+                      onsubmit="event.preventDefault(); alert('Thanks for subscribing!')">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="your email adresse"
+                        aria-label="Your email address"
+                        required
+                        class="w-full rounded-full border border-gray-300 bg-white px-5 py-3 text-gray-800 outline-none placeholder:text-gray-400 focus:border-blue-400 focus:ring-2 focus:ring-blue-400 sm:w-[280px]"
+                    />
+                    <button
+                        type="submit"
+                        class="whitespace-nowrap rounded-full bg-blue-400 px-5 py-3 font-medium transition hover:bg-blue-500 active:scale-95">
+                        Join 500K+ Readers
+                    </button>
+                </form>
+                <!-- Subscription Note -->
+                <p class="mt-5 text-sm text-gray-100"> Try it free for 30 days! No credit card required. Cancel anytime.</p>
+                <!-- Community Section -->
+                <div class="mx-auto mt-10 flex flex-wrap items-center justify-center gap-5">
+                    <strong class="text-center text-base leading-6">
+                        Join the #1 community<br />
+                        becoming millionaire !
+                    </strong>
+                    <div class="flex items-center">
+                        <img
+                            src="https://i.pravatar.cc/100?img=12"
+                            alt="Community member"
+                            class="relative z-10 h-12 w-12 rounded-full border-2 border-gray-300 object-cover"
+                        />
+                        <img
+                            src="https://i.pravatar.cc/100?img=47"
+                            alt="Community member"
+                            class="-ml-4 h-12 w-12 rounded-full border-2 border-gray-300 object-cover"
+                        />
+                        <img
+                            src="https://i.pravatar.cc/100?img=13"
+                            alt="Community member"
+                            class="-ml-4 h-12 w-12 rounded-full border-2 border-gray-300 object-cover"
+                        />
+                        <img
+                            src="https://i.pravatar.cc/100?img=44"
+                            alt="Community member"
+                            class="-ml-4 h-12 w-12 rounded-full border-2 border-gray-300 object-cover"
+                        />
+                        <img
+                            src="https://i.pravatar.cc/100?img=68"
+                            alt="Community member"
+                            class="-ml-4 h-12 w-12 rounded-full border-2 border-gray-300 object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Previous Issues Section -->
+        <section id="articles" class="mx-auto max-w-4xl px-5 py-12 sm:px-6">
+            <h2 class="mb-12 text-center font-serif text-4xl font-bold sm:text-5xl"> Previous Issues</h2>
+            <!-- Article 1 -->
+            <article class="border-b border-gray-400 pb-10">
+                <p class="mb-3 text-sm text-gray-300"> April 16, 2020</p>
+                <h3 class="mb-3 text-2xl font-bold leading-tight sm:text-3xl">
+                    <a href="#" class="transition hover:text-blue-400">   Process Documents Using Artificial Intelligence For RPA Bots</a>
+                </h3>
+                <p class="mb-4 text-base leading-7 text-gray-200 sm:text-lg">
+                    Earlier RPA bots used to have some limitations like it would
+                    take structured data for processing from Excel and databases.
+                    But with advancements in technology like OCR (Optical Character
+                    Recognition) and Machine Learning, RPA bots are capable of
+                    extracting this data ...
+                </p>
+                <a href="#" class="font-medium text-gray-100 underline transition hover:text-blue-400"> Continue Reading</a>
+            </article>
+            <!-- Article 2 -->
+            <article class="border-b border-gray-400 py-10">
+                <p class="mb-3 text-sm text-gray-300"> April 16, 2020 </p>
+                <h3 class="mb-3 text-2xl font-bold leading-tight sm:text-3xl">
+                    <a href="#" class="transition hover:text-blue-400">Implement Dark Mode in Your Android App </a>
+                </h3>
+                <p class="mb-4 text-base leading-7 text-gray-200 sm:text-lg">
+                    Are you curious to implement the Dark Mode in Android
+                    Application? Here's the perfect guideline to attain this
+                    feature in your Android app. Don't waste your time;
+                    just implement and enjoy Dark Mode.
+                </p>
+                <a href="#" class="font-medium text-gray-100 underline transition hover:text-blue-400"> Continue Reading</a>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="border-b border-gray-400 py-10">
+                <p class="mb-3 text-sm text-gray-300">April 16, 2020</p>
+                <h3 class="mb-3 text-2xl font-bold leading-tight sm:text-3xl">
+                    <a href="#" class="transition hover:text-blue-400">Why is Mental Health one of the Important Issues to Address?</a>
+                </h3>
+                <p class="mb-4 text-base leading-7 text-gray-200 sm:text-lg">
+                    Mental health was one of the under spoken topics before
+                    this lockdown. After sitting at home for about six months,
+                    I realized that this was an important topic not only in
+                    the work sector but also in daily living.
+                </p>
+                <a href="#" class="font-medium text-gray-100 underline transition hover:text-blue-400">Continue Reading</a>
+            </article>
+        </section>
+        <!-- Bottom Subscription Section -->
+        <section class="px-5 py-20 text-center">
+            <h2 class="font-serif text-3xl font-bold sm:text-4xl">Subscribe to the Newsletter</h2>
+            <form
+                class="mx-auto mt-8 flex max-w-xl flex-col items-center justify-center gap-4 sm:flex-row"
+                onsubmit="event.preventDefault(); alert('Thanks for subscribing!')">
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="your email adresse"
+                    aria-label="Your email address"
+                    required
+                    class="w-full rounded-full border border-gray-300 bg-white px-5 py-3 text-gray-800 outline-none placeholder:text-gray-400 focus:border-blue-400 focus:ring-2 focus:ring-blue-400 sm:w-[280px]"
+                />
+                <button
+                    type="submit"
+                    class="whitespace-nowrap rounded-full bg-blue-400 px-5 py-3 font-medium transition hover:bg-blue-500 active:scale-95">
+                    Join 500K+ Readers
+                </button>
+            </form>
+            <p class="mt-6 text-sm text-gray-100">Try it free for 30 days! No credit card required. Cancel anytime.</p>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="border-t border-gray-700 px-6 py-8 text-center text-sm text-gray-300">
+        <p>
+            © Copyright 2024 Newsletter. All Rights Reserved by
+            <a href="https://lbegey78.gumroad.com/" class="underline hover:text-blue-400">Laurent Begey</a>
+            <span class="mx-1">•</span>Distributed by
+            <a href="https://themewagon.com/" class="underline hover:text-blue-400">ThemeWagon</a>
+        </p>
+    </footer>
+</body>
+</html>
